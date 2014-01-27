@@ -11,7 +11,6 @@
 #include "JuceHeader.h"
 #include "MainComponent.h"
 
-
 //==============================================================================
 class TestAppApplication  : public JUCEApplication
 {
@@ -28,14 +27,13 @@ public:
     {
         // This method is where you should put your application's initialisation code..
 
-        mainWindow = new MainWindow();
+        //  = new MainWindow();
     }
 
     void shutdown()
     {
         // Add your application's shutdown code here..
-
-        mainWindow = nullptr; // (deletes our window)
+        // mainWindow = nullptr; // (deletes our window)
     }
 
     //==============================================================================
@@ -90,8 +88,11 @@ public:
         JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainWindow)
     };
 
+   
+    
 private:
     ScopedPointer<MainWindow> mainWindow;
+
 };
 
 //==============================================================================

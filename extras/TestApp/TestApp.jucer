@@ -22,17 +22,15 @@
       <MODULEPATHS>
         <MODULEPATH id="juce_core" path="../../src/modules"/>
         <MODULEPATH id="juce_events" path="../../src/modules"/>
-        <MODULEPATH id="juce_graphics" path="../../src/modules"/>
         <MODULEPATH id="juce_data_structures" path="../../src/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="../../src/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="../../src/modules"/>
         <MODULEPATH id="juce_cryptography" path="../../src/modules"/>
-        <MODULEPATH id="juce_video" path="../../src/modules"/>
-        <MODULEPATH id="juce_opengl" path="../../src/modules"/>
         <MODULEPATH id="juce_audio_basics" path="../../src/modules"/>
         <MODULEPATH id="juce_audio_devices" path="../../src/modules"/>
         <MODULEPATH id="juce_audio_formats" path="../../src/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../src/modules"/>
         <MODULEPATH id="juce_audio_processors" path="../../src/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../src/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../src/modules"/>
       </MODULEPATHS>
     </LINUX_MAKE>
   </EXPORTFORMATS>
@@ -48,8 +46,6 @@
     <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
-    <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
-    <MODULES id="juce_video" showAllCode="1" useLocalCopy="0"/>
   </MODULES>
-  <JUCEOPTIONS/>
+  <JUCEOPTIONS JUCE_X11="disabled"/>
 </JUCERPROJECT>

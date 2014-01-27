@@ -33,8 +33,6 @@
 #define JUCE_MODULE_AVAILABLE_juce_graphics              1
 #define JUCE_MODULE_AVAILABLE_juce_gui_basics            1
 #define JUCE_MODULE_AVAILABLE_juce_gui_extra             1
-#define JUCE_MODULE_AVAILABLE_juce_opengl                1
-#define JUCE_MODULE_AVAILABLE_juce_video                 1
 
 //==============================================================================
 // juce_audio_devices flags:
@@ -101,6 +99,10 @@
  //#define JUCE_PLUGINHOST_VST
 #endif
 
+#ifndef    JUCE_PLUGINHOST_VST3
+ //#define JUCE_PLUGINHOST_VST3
+#endif
+
 #ifndef    JUCE_PLUGINHOST_AU
  //#define JUCE_PLUGINHOST_AU
 #endif
@@ -126,6 +128,13 @@
 
 #ifndef    JUCE_INCLUDE_ZLIB_CODE
  //#define JUCE_INCLUDE_ZLIB_CODE
+#endif
+
+//==============================================================================
+// juce_events flags:
+
+#ifndef    JUCE_X11
+ #define   JUCE_X11 0
 #endif
 
 //==============================================================================
@@ -165,23 +174,8 @@
  //#define JUCE_WEB_BROWSER
 #endif
 
-//==============================================================================
-// juce_video flags:
-
-#ifndef    JUCE_DIRECTSHOW
- //#define JUCE_DIRECTSHOW
-#endif
-
-#ifndef    JUCE_MEDIAFOUNDATION
- //#define JUCE_MEDIAFOUNDATION
-#endif
-
-#ifndef    JUCE_QUICKTIME
- //#define JUCE_QUICKTIME
-#endif
-
-#ifndef    JUCE_USE_CAMERA
- //#define JUCE_USE_CAMERA
+#ifndef    JUCE_ENABLE_LIVE_CONSTANT_EDITOR
+ //#define JUCE_ENABLE_LIVE_CONSTANT_EDITOR
 #endif
 
 
